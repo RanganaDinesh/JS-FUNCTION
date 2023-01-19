@@ -7,111 +7,34 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Q1.Create one function with zero parameter having a console statement;</h3>
-    <PRE>
-        function prepbytes() {
-            console.log("EA19 BATCH")
+    <h3>Q1."Guess the 
+
+        function FindSum(a, b){
+            return a + b;
         }
-        OUTPUT : "EA19 BATCH"
-    </PRE>
-    <h3>Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</h3>
-    <pre>
-        function sum(a, b) {
-            console.log(a + b);
+        
+        function DisplayData(data, batch){
+            console.log(`i am from ${data} and My batch is EA${batch}`) // here we are returning values of "{data}" and "{batch}"
         }
-        sum(3, 4);
-        OUTPUT: 7;
-    </pre>
-    <h3>"Print output: 
-        var x = 21;
-        var girl = function () {
-            console.log(x);
-            var x = 20;
-        };
-        girl ();"</h3>
-        <pre>
-            var x = 21;
-        var girl = function () {
-            console.log(x);
-            var x = 20;
-        };
-girl();
-        OUTPUT : UNDEFINE
-
-        </pre>
         
-    <h3>"Print output: 
-var x = 21;
-girl ();
-console.log(x)
-function girl() {
-    console.log(x);
-    var x = 20;
-};
-"</h3>
-<pre>
-    var x = 21;
-girl ();
-console.log(x)
-output: undefined
-function girl() {
-    console.log(x);
-    var x = 20;
-};
-output: 21
-</pre>
-    <h3>"Print output
-
-        var x = 21;
-        a();
-        b();
-        
-          function a() {
-            
-           x = 20;
-          console.log(x);
-        };
-         function b() {
-            
-            x = 40;
-           console.log(x);
-        };"</h3>
+        DisplayData(""PrepBytes"", FindSum(10, 9));"</h3>
         <pre>
-            
-a();
-b();
-
-  function a() {
-    
-   x = 20;
-  console.log(x);
-};
-output : 20
- function b() {
-    
-    x = 40;
-   console.log(x);
-};
-output : 40
+            Output:i am from PrepBytes and My batch is EA19  ;
         </pre>
-    <h3>Write a function that accepts parameter n and returns factorial of n</h3>
-    <pre>
-        unction num(n){
-            var factorial=1;
-            var i=1;
-            while(i <= n){
-                factorial = factorial * i;
-                i++;
+        <h3>Abc();
+            const Abc = function(){
+                let value = 20;
+                console.log(value);
             }
-            console.log(factorial);
-        }
-        num(5)
-        output :120
-    </pre>
-    <h3>Create one arrow function</h3>
-    <pre>
-        const add = (a, b) => a + b;
-    </pre>
+           </h3>
+           <pre>
+            Abc(); /// in javascript code will be excuted by line by line
+            const Abc = function(){
+                let value = 20;
+                console.log(value);
+            }
+            output: ReferenceError: Cannot access 'Abc' before initialization;
+           </pre>
     
 </body>
 </html>
